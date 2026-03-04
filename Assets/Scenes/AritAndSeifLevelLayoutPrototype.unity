@@ -2555,6 +2555,7 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   turnMode: 0
+  isRotated: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
@@ -3953,23 +3954,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.025
+      value: 0.04959036
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.43400002
+      value: -0.42415994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.465
+      value: 0.4665668
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6827001
+      value: 0.6747191
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.73069876
+      value: 0.73807466
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3981,7 +3982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 93.89
+      value: 95.13501
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4015,9 +4016,6 @@ PrefabInstance:
       addedObject: {fileID: 2047499838}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2047499837}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2047499836}
   m_SourcePrefab: {fileID: 100100000, guid: 32cd91183c6d3d34cb596c166aad5f92, type: 3}
 --- !u!1 &2047499834 stripped
@@ -4045,31 +4043,6 @@ MonoBehaviour:
   lastDamagedGoods: []
   DebtText: {fileID: 536897680}
   debtNum: 0
---- !u!143 &2047499837
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047499834}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Height: 0.01
-  m_Radius: 0.02
-  m_SlopeLimit: 0.1
-  m_StepOffset: 0.01
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!54 &2047499838
 Rigidbody:
   m_ObjectHideFlags: 0

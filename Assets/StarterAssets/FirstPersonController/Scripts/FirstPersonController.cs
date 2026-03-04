@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.Mathematics;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -116,12 +117,31 @@ namespace StarterAssets
 
 		}
 
+		//bool SwordWeilding = true;
+		//Transform RotatedRotation = (2, 2, 2);
+		Quaternion currentRotation;
+		bool rotatingComplete = false;
 		private void Update()
 		{
+			if (_input.isRotated)
+			{
+				GiantSwordMoveable.transform.rotation *= Quaternion.Euler(85f, 85f, 85f);
+
+
+                /*if (GiantSwordMoveable.transform.rotation == Quaternion.Euler(175f, 90f, 0.0f))
+				{
+
+				}*/
+
+				_input.isRotated = false;
+            }
+
+
 			JumpAndGravity();
 			GroundedCheck();
 			if (_input.turnMode)
 			{
+				//SwordWeilding = false;
 				float currentRotation = transform.rotation.y;
 				/*if (!SwordFrozen)
 				{
@@ -153,15 +173,29 @@ namespace StarterAssets
                     GiantSwordObj.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 					GiantSwordObj.GetComponent<Rigidbody>().freezeRotation = true;
                 }*/
+				/*if (!SwordWeilding)
+				{
+
+
+
+					SwordWeilding = true;
+				}*/
+
                 Move();
+
                 if (!GiantSwordMoveable.activeInHierarchy)
                 {
                     GiantSwordMoveable.SetActive(true);
+                    GiantSwordMoveable.transform.position = GiantSwordStill.transform.position;
+                    GiantSwordMoveable.transform.rotation = GiantSwordStill.transform.rotation;
+                    
                 }
                 if (GiantSwordStill.activeInHierarchy)
                 {
                     GiantSwordStill.SetActive(false);
                 }
+
+
             }
 
 

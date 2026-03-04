@@ -14,6 +14,7 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 		public bool turnMode;
+		public bool isRotated;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -56,8 +57,18 @@ namespace StarterAssets
         public void OnQuitGame(InputValue value)
         {
             //Debug.Log("OnTurnHead");
-            Debug.Log("quit");
+            
             SceneManager.LoadScene("SampleScene");
+
+        }
+
+        public void OnTurnSword(InputValue value)
+        {
+            //Debug.Log("OnTurnHead");
+            Debug.Log("how");
+            isRotated = true;
+
+
 
         }
 

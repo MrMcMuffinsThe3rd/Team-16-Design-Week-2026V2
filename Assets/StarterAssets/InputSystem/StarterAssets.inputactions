@@ -59,6 +59,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "TurnSword",
+                    "type": "Button",
+                    "id": "7554fa4b-b0df-4d04-a98d-5389d32492ab",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -257,6 +266,17 @@
                     "processors": "",
                     "groups": ";KeyboardMouse",
                     "action": "QuitGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3fa583f-b16a-4a12-9d6d-10ae9f61a65e",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "TurnSword",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
