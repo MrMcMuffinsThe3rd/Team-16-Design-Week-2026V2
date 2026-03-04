@@ -2251,7 +2251,7 @@ MonoBehaviour:
   BottomClamp: -89
   GiantSwordMoveable: {fileID: 248701347}
   GiantSwordStill: {fileID: 1752195981}
-  _controller2: {fileID: 1752195982}
+  _controller2: {fileID: 0}
 --- !u!143 &4416926083347132233
 CharacterController:
   m_ObjectHideFlags: 0
